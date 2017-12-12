@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>muh Weather 'n' Map</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>MuhWeather 'n' Map</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div id="map"></div>
+        <p>no radar, just map</p>
+      </div>
+      <div class="col">
+        <h2 class="text-center">Currently</h2>
+        <h3 class="text-center" id="overAll"></h3>
+          <div class="col">
+          <ul>
+            <li id="cSum"><strong>Conditions:</strong> <em></em></li>
+            <li id="cTemp"><strong>Temp:</strong> <em></em> </li>
+            <li id="cpercip"><strong>Chance of Precipitation:</strong> <em></em></li>
+            <li id="wind"><strong>Wind: </strong><em>
+              <li id="windBearing">Bearing: <em></em></li>
+              <li id="windGust">Gust: <em></em></li>
+              <li id="windSpeed">Speed: <em></em></li>
+            </em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdmx4UjTOtjUJcLzSpsXndh66M65kxGfw&callback=initMap"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
